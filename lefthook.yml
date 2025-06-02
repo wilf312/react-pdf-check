@@ -1,0 +1,6 @@
+pre-commit:
+  jobs:
+    - name: check env
+      run: echo "node version" && node -v && echo "zsh arch" && uname -m && echo "node arch" && node -p "process.arch"
+    - name: format frontend
+      run: pnpm run format

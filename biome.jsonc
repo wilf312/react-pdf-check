@@ -1,0 +1,25 @@
+{
+  "files": {
+    "ignore": [
+      "**/tsconfig.*.json",
+    ],
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false, // または "all": false
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedVariables": "error",
+      },
+      // 他のルールを無効にする場合は、必要に応じて追加
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off",
+      },
+      "style": {
+        "useNamingConvention": "off",
+      },
+    },
+  },
+}
